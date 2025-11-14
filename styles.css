@@ -118,13 +118,19 @@ body{
     text-decoration: none;
     border-radius: 50%;
     background-color: #fff;
-    /* transition: all 0.3s ease; */
-    transition: color 0,4s linear;
+    position: relative;
+    overflow: hidden;
+    transition: transform .3s ease;
+    border: 1px solid #000;
 }
+
 
 .social-fixed-sidebar .social-icon i {
     color: #000;
     font-size: 20px;
+    position: relative;
+    z-index: 2;
+    transition: color .3s ease;
 }
 
 
@@ -132,8 +138,22 @@ body{
     border: 2px solid #fff;
 }
 
-.social-fixed-sidebar .social-icon i:hover {
-    color: #fff; 
+.social-fixed-sidebar .social-icon::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    z-index: 1;
+    transition: height 1s ease;
+}
+
+
+
+.social-fixed-sidebar .social-icon:hover i {
+    color: #fff;
     font-size: 20px;
     animation: rotate 1s linear;  
 }    
@@ -156,35 +176,37 @@ body{
     }
 
 
-
-.social-fixed-sidebar .social-instagram:hover {
-    background: radial-gradient(circle at 30% 107%, 
-        #fdf497 0%,  
-        #fd5949 45%,  
-        #d6249f 60%,   
-        #285AEB 90%   
-    );
-    transform: scale(1.1); 
-}
-
-
-
-.social-fixed-sidebar .social-tiktok:hover {
-    background-color: #000;
-    transform: scale(1.1); 
-}
-
-.social-fixed-sidebar .social-whatsapp:hover {
-    background-color: #25D366; 
+.social-fixed-sidebar .social-instagram:hover::before {
+    height: 100%;
     transform: scale(1.1);
+    background: linear-gradient(
+        0deg,
+        #fdf497 0%,  
+        #fd5949 40%,  
+        #d6249f 65%,   
+        #285AEB 100%
+    );
 }
 
 
-.social-fixed-sidebar .social-facebook:hover {
+
+.social-fixed-sidebar .social-facebook:hover::before {
+    height: 100%;
     background-color: #1877F2; 
     transform: scale(1.1);
 }
 
+.social-fixed-sidebar .social-tiktok:hover::before {
+    height: 100%;
+    background-color: #000;
+    transform: scale(1.1); 
+}
+
+.social-fixed-sidebar .social-whatsapp:hover::before {
+    height: 100%;
+    background-color: #25D366; 
+    transform: scale(1.1);
+}
 
 
 /* ======================================================= */
