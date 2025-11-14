@@ -1,0 +1,255 @@
+/* ======================================================= */
+/* 1. Aici sunt partile principale + header */
+/* ======================================================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.header{
+    background: #ff6f61;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header h1{
+    margin: 0;
+    font-size: 2.5em;
+}
+
+
+/* ======================================================= */
+/* 2. Navbar */
+/* ======================================================= */
+
+.navbar {
+      width: 100%;
+      position: fixed; 
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.3); 
+      color: white;
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+    }
+
+.navbar.scrolled {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+.navbar a{
+    color: #fffdfd;
+    padding: 7px 10px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-links .nav-link:hover{
+    background: #c7a254;
+    color: #fff;
+    border: 1px solid #fff;
+    transform: scale(1.10);
+}
+
+.navbar .nav-links .logo img:hover{
+    transform: scale(1.05);
+}
+
+.navbar .nav-links{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.navbar .nav-links li{
+  display: flex;
+  list-style: none;
+}
+
+.navbar .nav-links .logo img{
+  height: 100px;         
+  width: auto;           
+  object-fit: contain;
+}
+
+/* ======================================================= */
+/* 3. Social Media Fixed Sidebar */
+/* ======================================================= */
+
+.social-fixed-sidebar {
+    position: fixed; 
+    left: 15px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    z-index: 990; 
+    display: flex; 
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.social-fixed-sidebar .social-icon {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 45px; 
+    height: 45px; 
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #fff;
+    /* transition: all 0.3s ease; */
+    transition: color 0,4s linear;
+}
+
+.social-fixed-sidebar .social-icon i {
+    color: #000;
+    font-size: 20px;
+}
+
+
+.social-fixed-sidebar .social-icon:hover{
+    border: 2px solid #fff;
+}
+
+.social-fixed-sidebar .social-icon i:hover {
+    color: #fff; 
+    font-size: 20px;
+    animation: rotate 1s linear;  
+}    
+    @keyframes rotate {
+        0% {
+            transform: rotateY(0deg);
+        }
+        25% {
+            transform: rotateY(90deg);
+        }
+        50% {
+            transform: rotateY(180deg);
+        }
+        75% {
+            transform: rotateY(240deg);
+        }
+        100% {
+            transform: rotateY(360deg);
+        }
+    }
+
+
+
+.social-fixed-sidebar .social-instagram:hover {
+    background: radial-gradient(circle at 30% 107%, 
+        #fdf497 0%,  
+        #fd5949 45%,  
+        #d6249f 60%,   
+        #285AEB 90%   
+    );
+    transform: scale(1.1); 
+}
+
+
+
+.social-fixed-sidebar .social-tiktok:hover {
+    background-color: #000;
+    transform: scale(1.1); 
+}
+
+.social-fixed-sidebar .social-whatsapp:hover {
+    background-color: #25D366; 
+    transform: scale(1.1);
+}
+
+
+.social-fixed-sidebar .social-facebook:hover {
+    background-color: #1877F2; 
+    transform: scale(1.1);
+}
+
+
+
+/* ======================================================= */
+/* 4. Hero Section */
+/* ======================================================= */
+
+.hero {
+  height: 100vh; 
+  background: url('pictures-for-website/Hero-Image.jpg') no-repeat center 30% / cover;
+  position: relative;
+  padding-top: 70px; 
+  background-color: #1a1a1a;
+}
+
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: 1;
+}
+
+.hero-content {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content span {
+  color: #c7a254; 
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-hero {
+  background: #c7a254;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn-hero:hover {
+  background: #b48e3a;
+  border: 2px solid #fff;
+  transform: scale(1.15);
+}
