@@ -1,4 +1,9 @@
 /* ======================================================= */
+/* Import font text */
+/* ======================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ======================================================= */
 /* 1. Aici sunt partile principale + header */
 /* ======================================================= */
 *{
@@ -275,3 +280,52 @@ body{
   border: 2px solid #fff;
   transform: scale(1.15);
 }
+
+/* ======================================================= */
+/* 5. About Section */
+/* ======================================================= */
+
+.about-content{
+    margin-top: 150px;
+}
+
+
+.about-content .title-about{
+    margin-left: 150px;
+}
+
+.about-content .title-about h2{
+  font-family: "Great Vibes", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3.5rem;
+}
+
+.about-content .title-about h1{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+.about-content h4{
+    text-align: center;
+    margin-left: 300px;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.about-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+    
+}
+
+
+
