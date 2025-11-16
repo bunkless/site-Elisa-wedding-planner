@@ -1,7 +1,7 @@
 /* ======================================================= */
 /* Import font text */
 /* ======================================================= */
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 
 /* ======================================================= */
 /* 1. Aici sunt partile principale + header */
@@ -13,10 +13,13 @@
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+  background-color: #f3f4f3;
+  color: #2c2d22;
+  line-height: 1.6;
 }
 
 .container{
@@ -97,6 +100,7 @@ body{
   height: 100px;         
   width: auto;           
   object-fit: contain;
+  margin: 0 100px;
 }
 
 /* ======================================================= */
@@ -220,7 +224,7 @@ body{
 
 .hero {
   height: 100vh; 
-  background: url('pictures-for-website/Hero-Image.jpg') no-repeat center 30% / cover;
+  background: url('pictures-for-website/Hero-ImageT.jpg') no-repeat center 40% / cover;
   position: relative;
   padding-top: 70px; 
   background-color: #1a1a1a;
@@ -254,10 +258,20 @@ body{
 .hero-content h1 {
   font-size: 2.8rem;
   margin-bottom: 1rem;
+ font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    text-transform: uppercase;
 }
 
-.hero-content span {
-  color: #c7a254; 
+.hero-content h2 {
+   font-size: 3.5rem;
+   font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .hero-content p {
@@ -266,7 +280,7 @@ body{
 }
 
 .btn-hero {
-  background: #c7a254;
+  background: #7c985c;
   color: #fff;
   padding: 0.8rem 1.8rem;
   border-radius: 50px;
@@ -276,7 +290,7 @@ body{
 }
 
 .btn-hero:hover {
-  background: #b48e3a;
+  background: #637949;
   border: 2px solid #fff;
   transform: scale(1.15);
 }
@@ -296,17 +310,18 @@ body{
 
 .about-content .title-about h2{
   font-family: "Great Vibes", cursive;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
-  font-size: 3.5rem;
+  font-size: 5rem;
 }
 
 .about-content .title-about h1{
-  font-family: "Montserrat", sans-serif;
+   font-family: "Playfair", serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
-  font-size: 3rem;
+  font-variation-settings:"wdth" 100;
+  font-size: 2rem;
 }
 
 .about-content h4{
