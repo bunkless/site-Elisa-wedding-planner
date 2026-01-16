@@ -1,8 +1,7 @@
 /* ======================================================= */
 /* Import font text */
 /* ======================================================= */
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
 /* ======================================================= */
 /* 1. Aici sunt partile principale + header */
 /* ======================================================= */
@@ -54,6 +53,11 @@ body{
       display: flex;
       justify-content: center;
       align-items: center;
+      font-family: "Libre Baskerville", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-size: 13px;
+      font-style: normal;
       background-color: rgba(0, 0, 0, 0.3); 
       color: white;
       z-index: 1000;
@@ -74,7 +78,7 @@ body{
 }
 
 .navbar .nav-links .nav-link:hover{
-    background: #c7a254;
+    background: #9D9760;
     color: #fff;
     border: 1px solid #fff;
     transform: scale(1.10);
@@ -250,7 +254,7 @@ body{
   text-align: center;
   color: #fff;
   z-index: 2;
-  max-width: 800px;
+  /* max-width: 800px; */
   padding: 0 20px;
 }
 
@@ -258,39 +262,29 @@ body{
 .hero-content h1 {
   font-size: 2.8rem;
   margin-bottom: 1rem;
- font-family: "Playfair", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-    text-transform: uppercase;
+  text-transform: uppercase;
+  max-width: 1500px;
 }
 
-.hero-content h2 {
-   font-size: 3.5rem;
-   font-family: "Great Vibes", cursive;
-  font-weight: 400;
-  font-style: normal;
+.hero-content h1:nth-child(2) {
+   font-family: "Libre Baskerville", serif;
+   margin-bottom: 30px;
+   color: #E4DED8
 }
 
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
 
 .btn-hero {
-  background: #7c985c;
+  background: #9D9760;
   color: #fff;
   padding: 0.8rem 1.8rem;
   border-radius: 50px;
   text-decoration: none;
   font-weight: 500;
-  transition: background 0.3s ease;
+  transition: background 0.8s ease;
 }
 
 .btn-hero:hover {
-  background: #637949;
+  background: #36241A;
   border: 2px solid #fff;
   transform: scale(1.15);
 }
