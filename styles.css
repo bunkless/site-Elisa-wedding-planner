@@ -16,9 +16,12 @@ body{
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings:"wdth" 100;
-  background-color: #f3f4f3;
-  color: #2c2d22;
+  background-color: #DDD6CE;
   line-height: 1.6;
+  /* background-image: url("./pictures-for-website/background\ for\ website.avif");
+  background-size: cover;
+  background-position: center; */
+
 }
 
 .container{
@@ -266,7 +269,7 @@ body{
   max-width: 1500px;
 }
 
-.hero-content h1:nth-child(2) {
+.hero-content span {
    font-family: "Libre Baskerville", serif;
    margin-bottom: 30px;
    color: #E4DED8
@@ -290,51 +293,146 @@ body{
 }
 
 /* ======================================================= */
-/* 5. About Section */
+/* 5. Motto Section */
 /* ======================================================= */
 
-.about-content{
-    margin-top: 150px;
+
+#motto{
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px 100px;
+  /* background-color: #DDD6CE; */
+  border-radius: 20px;
 }
 
-
-.about-content .title-about{
-    margin-left: 150px;
-}
-
-.about-content .title-about h2{
-  font-family: "Great Vibes", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 5rem;
-}
-
-.about-content .title-about h1{
-   font-family: "Playfair", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:"wdth" 100;
-  font-size: 2rem;
-}
-
-.about-content h4{
+.motto-greeting{
     text-align: center;
-    margin-left: 300px;
-    font-size: 2rem;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+    font-size: 72px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #000;
 }
 
-.about-grid{
+.motto-grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-top: 50px;
-    
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    padding: 30PX;
+    background-color: #B9AD97;
+    border-radius: 20px;
+    /* box-shadow: 0 0 10px 5px #B9AD97; */
+}
+
+.motto-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    object-fit: cover;
+    /* box-shadow: 0 0 10px 5px #737373; */
+    box-shadow: 10px 10px 5px rgb(109, 106, 106);
+}
+
+.motto-text h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000;
 }
 
 
+.motto-text h2{
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+    color: #000;
+}
 
+/* ======================================================= */
+/* 5. Scrool Indicator */
+/* ======================================================= */
+
+/* ======================================================= */
+/* 6. Obietiv Section */
+/* ======================================================= */
+
+
+#obiectiv{
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px 100px;
+  background-color: #DDD6CE;
+  border-radius: 20px;
+}
+
+.obiectiv-greeting{
+    text-align: center;
+    font-size: 72px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.obiectiv-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    padding: 30PX;
+    background-color: #B9AD97;
+    border-radius: 20px;
+    /* box-shadow: 0 0 10px 5px #B9AD97; */
+}
+
+.obiectiv-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    object-fit: cover;
+    /* box-shadow: 0 0 10px 5px #737373; */
+    box-shadow: 10px 10px 5px rgb(109, 106, 106);
+}
+
+.obiectiv-text h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000;
+}
+
+
+.obiectiv-text h2{
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+    color: #000;
+}
+
+
+/* ======================================================= */
+/* 7. Column Section */
+/* ======================================================= */
+
+#scrollTopBtn{
+    text-align: right;
+    margin-right: 40px;
+    margin-top: 150px;   
+    }
+
+#scrollTopBtn button{
+    border: none;
+    text-align: center;
+    background-color: #a9a0a0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#scrollTopBtn i{
+    color: #575151;
+}
+
+#scrollTopBtn button:hover{
+    background-color: #8b8484;
+    cursor: pointer;
+}
