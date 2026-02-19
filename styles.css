@@ -436,3 +436,14 @@ body{
     background-color: #8b8484;
     cursor: pointer;
 }
+
+
+
+/* ======================================================= */
+/* 8.  data-aos animation */
+/* ======================================================= */
+
+
+[data-aos] {
+  transition-property: opacity !important;
+}
