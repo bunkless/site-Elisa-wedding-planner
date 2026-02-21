@@ -30,12 +30,22 @@ scrollTopBtn.addEventListener("click", () => {
 
 // AOS animation
 
-AOS.init({
-  duration: 1000,
-  easing: 'ease-in-out',
-  once: true
-});
+let aosInitialized = false;
 
+function initAOS() {
+  if (!aosInitialized) {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 120
+    });
+    aosInitialized = true;
+  }
+}
 
+// Așteaptă prima interacțiune de scroll
+window.addEventListener('scroll', function () {
+  initAOS();
+}, { once: true });
 
 
