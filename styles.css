@@ -316,11 +316,12 @@ body{
 .motto-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 20px;
     align-items: center;
-    padding: 30PX;
+    padding: 30px 60px;
     background-color: #B9AD97;
     border-radius: 20px;
+    position: relative;
     /* box-shadow: 0 0 10px 5px #B9AD97; */
 }
 
@@ -346,6 +347,16 @@ body{
     line-height: 1.5;
     text-align: left;
     color: #000;
+}
+
+.fake-legend-motto img{
+  position: absolute;
+  top: -35px;
+  left: 5%;
+  padding: 0 10px;
+  display: flex;
+  width: 120px;
+  height: 90px;
 }
 
 /* ======================================================= */
@@ -376,7 +387,7 @@ body{
 .obiectiv-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 20px;
     align-items: center;
     padding: 30PX;
     background-color: #B9AD97;
@@ -406,6 +417,16 @@ body{
     line-height: 1.5;
     text-align: left;
     color: #000;
+}
+
+.fake-legend-obiectiv img{
+  position: absolute;
+  top: -35px;
+  right: 5%;
+  padding: 0 10px;
+  display: flex;
+  width: 120px;
+  height: 90px;
 }
 
 
@@ -446,4 +467,34 @@ body{
 
 [data-aos] {
   transition-property: opacity !important;
+}
+
+
+/* ======================================================= */
+/* 8.  Footer */
+/* ======================================================= */
+
+.footer {
+    background-color: #36241A;
+    color: #fff;
+    margin-top: 50px;
+    position: relative;
+}
+
+.footer .footer-logo img{
+    height: 120px;         
+    width: auto;       
+    object-fit: contain;
+    margin: 50px 90px;
+}
+
+
+.fake-legend img{
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  padding: 0 10px;
+  display: flex;
+  width: 120px;
+  height: 90px;
 }
