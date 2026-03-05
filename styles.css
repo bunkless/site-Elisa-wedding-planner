@@ -485,14 +485,25 @@ body{
   position: absolute;
   top: -35px;
   left: 50%;
+  transform: translateX(-50%);
   padding: 0 10px;
   display: flex;
   width: 120px;
   height: 90px;
 }
 
-.footer .footer-logo{
+.flex-footer{
     display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px;
+}
+
+
+.flex-footer .footer-logo{
+    text-align: center;
+    align-items: center;
+    flex: 1;
 }
 
 .footer .footer-logo img{
@@ -500,7 +511,72 @@ body{
     width: auto;       
     object-fit: contain;
     margin: 50px 90px;
+    
 }
+
+.footer-cerere-oferta{
+    flex: 2;
+    text-align: center;
+    margin: auto;
+}
+
+.footer-cerere-oferta p{
+    font-size: 18px;
+    margin: 20px 50px;
+    color: #fff;
+}
+
+.footer-cerere-oferta .button-cerere-oferta{
+    background-color: #9D9760;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    border: 2px solid #9D9760;
+    font-weight: 500;
+    transition: background 0.8s ease;
+}
+
+.footer-cerere-oferta .button-cerere-oferta:hover {
+    background: #36241A;
+    border: 2px solid #fff;
+    transform: scale(1.05);
+}
+
+
+.footer-contact{
+    flex: 1;
+}
+
+.footer-contact h2{
+    font-size: 25px;
+    margin: 80px 10px 20px 10px;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-contact p{
+    font-size: 14px;
+    margin: 10px 50px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
