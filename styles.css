@@ -431,6 +431,19 @@ body{
 
 
 /* ======================================================= */
+/* 7. Service Section */
+/* ======================================================= */
+
+
+.service-greeting{
+    text-align: center;
+    font-size: 72px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+/* ======================================================= */
 /* 7. Column Section */
 /* ======================================================= */
 
@@ -550,15 +563,14 @@ body{
 
 .footer-contact h2{
     font-size: 25px;
-    margin: 80px 10px 20px 10px;
+    margin: 0 10px 20px 10px;
     color: #fff;
-    text-align: center;
-    justify-content: center;
+    text-align: left;
 }
 
 .footer-contact p{
     font-size: 14px;
-    margin: 10px 50px;
+    margin: 10px 10px;
     color: #fff;
 }
 
